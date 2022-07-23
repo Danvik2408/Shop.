@@ -1,0 +1,291 @@
+body{
+    width: 100%;
+    height: 2030px;
+    font-size: 10px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Header */
+.topnav {
+    overflow: hidden;
+    border-bottom: 1px solid #999;
+  }
+  
+  .topnav a {
+    float: left;
+    font-family: 'Montserrat';
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+      transition:0.5s;
+  }
+  
+  .topnav a:hover {
+    font-size: 20px;
+    color: #999;
+      transition:0.5s;
+  }
+  
+  .topnav .active {
+    color: black;
+    transition: 0s;
+    font-size: 24px;
+    margin-right: 210px;
+    margin-left: 150px;
+  }
+  .topnav .active:hover {
+    transition:0s;
+    font-size: 24px;
+    color: #000;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav .active {
+    color: #fff;
+    width: 76%;
+    background-color: #000;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+    .topnav .active:hover {
+    transition:0s;
+    font-size: 24px;
+    color: #fff;
+   }
+   .topnav a{
+   background-color: #999;
+   color:#fff;
+  }
+  .topnav a:hover{
+    color: #fff;
+    font-weight:700;
+  }
+  .topnav a:last-child{
+    width: 24%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight:700;
+    background-color: #000;
+   }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  /* Header */
+  /* Inform */
+   .information{
+    width: 100%;
+    height: 757px;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+   }
+   .informationWelcome p{
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 10%;
+    text-align: center;
+   }
+   .informationServices{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 10%;
+    margin-top: 20px;
+    margin-right: 600px;
+   }
+   .informationServices ul{
+    list-style: none;
+    color: red;
+   }
+   .informationServices ul li{
+    margin-top: 20px;
+   }
+   .informationServices ul li::before{
+    content: '-';
+    color: red;
+   }
+.informationRevision{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.1em;
+}
+@media screen and (max-width: 500px){
+  body{
+    height: 1165px;
+  }
+  .information{
+    height: 420px;
+  }
+  .topnav{
+    border-bottom: none;
+  }
+  .informationWelcome p{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .informationServices{
+    margin-right: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 300px;
+  }
+  .informationRevision{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 25px;
+  }
+
+}
+
+  /* Inform */
+/* slider */
+.carousel{
+    width: 433px;
+    height: 580px;
+    position: absolute;
+    left: 540px;
+}
+.btn1{
+    width: 434px;
+    height: 80px;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 540px;
+    margin-top: 50px;
+    transition: 1s;
+    margin-right: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+.btn1:hover{
+    color: #999;
+    cursor: pointer;
+    font-size: 36px;
+    letter-spacing: 10px;
+    transition: 1s;
+    background-color: rgb(22, 22, 22);
+    box-shadow: 10px 10px 10px #999;
+    }
+        @media screen and (max-width: 500px){
+          .carousel{
+            width: 258px;
+            height: 346px;
+            left: 60px;
+            margin-top: 50px;
+          }
+          .btn1{
+           left: 60px;
+            width: 258px;
+          }
+          .btn1:hover{
+            font-size: 24px;
+            
+            }
+        }
+/* slider */
+/* Footer */
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color: #000;
+        margin-top: 305px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px;
+    }
+    Footer .active{
+        color: #fff;
+    width: 76%;
+    background-color: #000;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    }
+    Footer .active:hover{
+        color: #fff;
+    }
+   .footerLinks{
+     width: 200px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+   }
+   .footerLinks img{
+    width: 50px;
+    height: 50px;
+   }
+   @media screen and (max-width: 500px){
+    footer{
+      padding: 20px;
+      height: 100px;
+    }
+    footer .active{
+      font-size: 20px;
+    }
+    .footerLinks img{
+      width: 35px;
+      height: 35px;
+    }
+    .footerLinks{
+      width: 135px;
+    }
+   }
+
+/* Footer */
+/* second pages */
+
+
+/* second pages */
